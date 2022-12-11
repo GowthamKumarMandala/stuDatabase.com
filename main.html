@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,500;0,700;1,300&display=swap"
+            rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                list-style: none;
+            }
+
+            body {
+                font-family: sans-serif;
+                background-color: #fff;
+            }
+
+            nav {
+                height: 80px;
+                width: 100%;
+                background-color: rgb(46 60 90);
+            }
+
+            label.logo {
+                color: white;
+                font-size: 32px;
+                font-weight: bold;
+                font-family: cursive;
+                padding: 0 100px;
+                line-height: 80px;
+            }
+
+            nav ul {
+                float: right;
+                margin-right: 40px;
+                line-height: 80px;
+                color: white;
+            }
+
+            nav ul #search {
+                border-radius: 10px;
+                height: 30px;
+                width: 230px;
+            }
+
+            nav li {
+                display: inline-block;
+                margin: 0 8px;
+
+            }
+
+            nav a {
+                color: white;
+                text-transform: lowercase;
+                border: 1px solid transparent;
+                font-size: 18px;
+                padding: 7px 10px;
+                border-radius: 6px;
+            }
+
+            a.active,
+            a:hover {
+                border: 1px solid white;
+                transition: .5s;
+                text-transform: scale(2);
+            }
+
+            nav ul .icon {
+                background-color: white;
+                height: 30px;
+                width: 29px;
+                margin: 25px 40px 0px 0px;
+                float: right;
+                cursor: pointer;
+                display: none;
+            }
+
+            .paper {
+                font-size: 35px;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: flex-start;
+            }
+
+            .head {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 400px;
+            }
+
+            .paper .paper-questions {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-aroundd;
+                margin: 40px;
+
+            }
+
+            .paper .paper-questions p {
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            .paper .paper-questions .question .option-label {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 20px;
+                margin-left: 2px;
+            }
+
+            .question {
+                display: block;
+            }
+
+            .option {
+                accent-color: green;
+                height: 20px;
+                width: 30px;
+
+            }
+
+            .optionc {
+                accent-color: green;
+                height: 20px;
+                width: 30px;
+            }
+
+            .option:hover {
+                transform: scale(1.10);
+            }
+
+            .optionc:hover {
+                transform: scale(1.10);
+            }
+
+            .paper-submit {
+                height: 40px;
+                width: 120px;
+                font-size: 18px;
+                background: rgb(90, 165, 244);
+                cursor: pointer;
+                font-family: 'Times New Roman', Times, serif;
+                border-radius: 8px;
+                font-style: none;
+                list-style: none;
+            }
+
+            .paper-submit:hover {
+                background: rgb(80, 107, 167);
+                transition: 1s;
+            }
+
+            .submit-a {
+                color: white;
+            }
+
+            .submit-btn {
+                display: flex;
+                justify-content: center;
+                margin-top: 100px;
+            }
+
+            @media (max-width:900px) {
+                .head h1 {
+                    font-size: 33px;
+                    width: 433px;
+                }
+
+                nav {
+                    height: 147px;
+                    width: 100%;
+                    background-color: rgb(46 60 90);
+                }
+
+                .head {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 49px;
+                }
+            }
+        </style>
+    </head>
+
+<body>
+    <div id="navbar">
+        <nav>
+            <label class="logo">Studatabase.com</label>
+            <ul>
+                <input id="search" placeholder="Search something" type="text">
+                <a href="#">Search</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li><a href="index.html">Abount</a></li>
+                <li><a href="index.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- QUESTION PAPER -->
+
+    <section class="paper">
+        <div class="head">
+            <h1>Anwer all questions below</h1>
+        </div>
+        <div class="content1">
+            <form action="#" class="paper-questions">
+                <div class="question">
+                    <p>1. Who is the father of HTML?</p>
+                    <input type="radio" id="q1" name="q1" value="Rasmus Lerdorf" class="option">
+                    <label for="Rasmus_Lerdorf" class="option-label">A) Rasmus Lerdorf</label><br>
+                    <input type="radio" id="q1" name="q1" value="Tim Berners-Lee" class="option">
+                    <label for="Tim_Berners-Lee" class="option-label">B) Tim Berners-Lee</label><br>
+                    <input type="radio" id="q1" name="q1" value="Brendan Eich" class="option">
+                    <label for="Brendan_Eich" class="option-label">c) Brendan Eich</label><br>
+                    <input type="radio" id="q1" name="q1" value="Sergey Brin" class="option">
+                    <label for="Sergey_Brin" class="option-label">D) Sergey Brin</label>
+                </div>
+                <br>
+                <div class="question">
+                    <p>2. Which of the following is used to read an HTML page and render it?</p>
+                    <input type="radio" id="q2" name="q2" value="HTML" class="option">
+                    <label for="Web_server" class="option-label">A) Web server</label><br>
+                    <input type="radio" id="q2" name="q2" value="CSS" class="option">
+                    <label for="Web_network" class="option-label">B) Web network</label><br>
+                    <input type="radio" id="q2" name="q2" value="JavaScript" class="option">
+                    <label for="Web_browser" class="option-label">c) Web browser</label><br>
+                    <input type="radio" id="q2" name="q2" value="JavaScript" class="option">
+                    <label for="Web_matrix" class="option-label">c) Web matrix</label>
+                </div>
+                <br>
+                <div class="question">
+                    <p>3. What does the abbreviation HTML stand for?</p>
+                    <div class="a">
+                        <input type="checkbox" id="q3" name="q3" value="JavaScript" class="optionc">
+                        <label for="javascript" class="option-label">A) Hyper Text Markup Language</label>
+                    </div>
+                    <div class="a">
+                        <input type="checkbox" id="q3" name="q3" value="CSS" class="optionc">
+                        <label for="css" class="option-label">B) High Text Markup Language</label>
+                    </div>
+                    <div class="a">
+                        <input type="checkbox" id="q3" name="q3" value="JavaScript" class="optionc">
+                        <label for="javascript" class="option-label">c)Hyper Text Markdown Language</label>
+                    </div>
+                    <div class="a">
+                        <input type="checkbox" id="q3" name="q3" value="JavaScript" class="optionc">
+                        <label for="None" class="option-label">c) None of the above</label>
+                    </div>
+                </div>
+                <br>
+                <div class="question">
+                    <p>4. Please select your favorite Web language:</p>
+                    <input type="radio" id="q4a" name="q4" value="HTML" class="option">
+                    <label for="html" class="option-label">A) HTML</label><br>
+                    <input type="radio" id="q4b" name="q4" value="CSS" class="option">
+                    <label for="css" class="option-label">B) CSS</label><br>
+                    <input type="radio" id="q4c" name="q4" value="JavaScript" class="option">
+                    <label for="javascript" class="option-label">c) JavaScript</label><br>
+                    <input type="radio" id="PHP" name="q4" value="PHP" class="option">
+                    <label for="PHP" class="option-label">D) PHP</label>
+                </div>
+                <br>
+                <div class="question">
+                    <p>5. Which of the following is used to read an HTML page and render it?</p>
+                    <input type="radio" id="q5a" name="q5" value="web server" class="option">
+                    <label for="server" class="option-label">A) Web server</label><br>
+                    <input type="radio" id="q5b" name="q5" value="web network" class="option">
+                    <label for="network" class="option-label">B) Web network</label><br>
+                    <input type="radio" id="q5c" name="q5" value="Web browser" class="option">
+                    <label for="browser" class="option-label">C) Web browser</label><br>
+                    <input type="radio" id="q5d" name="q5" value="Web matrix" class="option">
+                    <label for="matrix" class="option-label">D) Web matrix</label>
+                </div>
+                <br>
+                <div class="question">
+                    <p>6. In which part of the HTML metadata is contained?</p>
+                    <input type="radio" id="q6a" name="q6" value="head tag" class="option">
+                    <label for="head_tag" class="option-label">A) head tag</label><br>
+                    <input type="radio" id="q6b" name="q6" value="title tag" class="option">
+                    <label for="title_tag" class="option-label">B) title tag</label><br>
+                    <input type="radio" id="q6c" name="q6" value="html tag" class="option">
+                    <label for="html_tag" class="option-label">C) html tag</label><br>
+                    <input type="radio" id="q6d" name="q6" value="body tag" class="option">
+                    <label for="body_tag" class="option-label">D) body tag</label><br>
+                </div>
+                <br>
+                <div class="question">
+                    <p>7. In HTML, target="_blank"s attribute is used to create a link that opens in a new window tab,
+                        is it true or false?</p>
+                    <input type="radio" id="q7a" name="q7" value="head tag" class="option">
+                    <label for="true7" class="option-label">A) True</label><br>
+                    <input type="radio" id="q7b" name="q7" value="title tag" class="option">
+                    <label for="false7" class="option-label">B) False</label><br>
+                </div>
+                <br>
+                <div class="question">
+                    <p>8. What is the correct syntax of web address?</p>
+                    <input type="radio" id="q8a" name="q8" value="head tag" class="option">
+                    <label for="port://domain.filenmae:path/scheme/prefix" class="option-label">A)
+                        port://domain.filenmae:path/scheme/prefix</label><br>
+                    <input type="radio" id="q8b" name="q8" value="title tag" class="option">
+                    <label for="prefix://scheme.port:domain/filename/path" class="option-label">B)
+                        prefix://scheme.port:domain/filename/path</label><br>
+                    <input type="radio" id="q8c" name="q8" value="html tag" class="option">
+                    <label for="path://prefix.port:domain/filename/scheme" class="option-label">C)
+                        path://prefix.port:domain/filename/scheme</label><br>
+                    <input type="radio" id="q8d" name="q8" value="body tag" class="option">
+                    <label for="scheme://prefix.domain:port/path/filename" class="option-label">D)
+                        scheme://prefix.domain:port/path/filename</label><br>
+                </div>
+                <br>
+                <div class="question">
+                    <p>9. What is the correct syntax of web address?</p>
+                    <input type="radio" id="q9a" name="q9" value="head tag" class="option">
+                    <label for="type" class="option-label">A) type</label><br>
+                    <input type="radio" id="q9b" name="q9" value="title tag" class="option">
+                    <label for="article" class="option-label">B) article</label><br>
+                    <input type="radio" id="q9c" name="q9" value="html tag" class="option">
+                    <label for="id" class="option-label">C) id</label><br>
+                    <input type="radio" id="q9d" name="q9" value="body tag" class="option">
+                    <label for="class" class="option-label">D) class</label><br>
+                </div>
+
+                <div class="submit-btn">
+                    <button type="submit" value="Submit" class="paper-submit"><a href="submitted.html"
+                            class="submit-a">submit</a></button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

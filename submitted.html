@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #fff;
+        }
+
+        nav {
+            height: 80px;
+            width: 100%;
+            background-color: rgb(46 60 90);
+        }
+
+        label.logo {
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            font-family: cursive;
+            padding: 0 100px;
+            line-height: 80px;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 40px;
+            line-height: 80px;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 8px;
+
+        }
+
+        nav a {
+            color: white;
+            text-transform: lowercase;
+            border: 1px solid transparent;
+            font-size: 18px;
+            padding: 7px 10px;
+            border-radius: 6px;
+        }
+
+        a.active,
+        a:hover {
+            border: 1px solid white;
+            transition: .5s;
+
+        }
+
+        nav ul .icon {
+            background-color: white;
+            height: 30px;
+            width: 29px;
+            margin: 25px 40px 0px 0px;
+            float: right;
+            cursor: pointer;
+            display: none;
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .backbtn a {
+            margin-top: 10px;
+        }
+
+        .back .backbtn {
+            margin-left: 970px;
+            margin-top: 28px;
+            height: 32px;
+            background-color: bisque;
+            font-size: 23px;
+            padding: 0;
+            width: 124px;
+        }
+
+        @media (max-width:900px) {
+            .img {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                align-content: center;
+                flex-wrap: nowrap;
+                margin-left: 181px;
+                flex-direction: column;
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+                width: 433px;
+                margin-left: 60px;
+                align-content: center;
+                flex-wrap: wrap;
+            }
+
+            h2 {
+                font-size: 23px;
+            }
+
+            .tick {
+                height: 112px;
+                width: 112px;
+                margin-left: 49px;
+            }
+
+            .back .backbtn {
+                margin-left: 225px;
+                margin-top: 28px;
+                height: 32px;
+                background-color: bisque;
+                font-size: 23px;
+                padding: 0;
+                width: 124px;
+            }
+
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <nav>
+            <label class="logo">Studatabase.com</label>
+            <ul>
+                <li class="icon">
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                </li>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Abount</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="img">
+        <img class="tick" src="images/tick.png" alt="successfully">
+    </div>
+    <div class="text">
+        <h1 class="head">THANK you </h1>
+        <h2>Your submisson successfull </h2>
+        <h2>your results will be released soon</h2>
+    </div>
+    <div class="back">
+        <button class="backbtn"><a href="index.html">Back</a></button>
+    </div>
+</body>
+
+</html>

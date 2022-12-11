@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StuDatabase.com/home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <nav>
+            <div class="mainlogo">
+                <img src="images/Screenshot (97)-01.jpeg" alt="logo.jpg" class="main-logo">
+                <label><a href="#" class="logo">StuDatabase.com</a></label>
+            </div>
+            <ul id="ul">
+                <li><input type="text" placeholder="search something" class='search-box'><a href="#"><i
+                            class="fa fa-fw fa-search"></i></a></li>
+                <li><a href="#home"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                <li><a href="#services"><i class="fa fa-commenting"></i>Services</a></li>
+                <li><a href="#exam"><i class="fa fa-users"></i>exam</a></li>
+                <li><a href="#feedback"><i class="fa fa-address-card"></i>Feedback</a></li>
+                <li><a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
+                <button class="close">close</button>
+            </ul>
+            <i class="fa fa-bars" aria-hidden="true" color="white"></i>
+            <span></span>
+        </nav>
+
+        <!-- WELCOME NOTE -->
+        <div class="welcome">
+            <img src="images/hi.jpg" class="employee" alt="#">
+            <div class="emp"></div>
+            <div class="body-text">
+                <label><a href="registration.html" class="welcome-note">welocome <span>Dear</span></a></label>
+                <p class="welcome-subtext">Hello,Dear welocome to this <span>StuDatabase.com</span>
+                    In this you can check technical talent and store your data and analyse by the results which are
+                    perfectly validated and published to you,
+                    So all you need to study well, learn, implement your knowledge throughout the knowledge check exam
+                    which you have to write in your own,
+                    for this you need to register by clicking the given register button given below.
+                </p>
+                <button class="register"><a href="registration.html">Register</a></button>
+                <div class="btnshadow"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXAM DETAILS SECTION -->
+    <div class="examh">
+        <h3 class="exam-heading"><span class="hiphen">___</span> EXAM DETAILS <span class="hiphen">___</span></h3>
+    </div>
+    <section class="exam-details" id="exam">
+
+        <div class="exam-content">
+            <img src="images/bullb.jpg" class="bulbimg" alt="note">
+            <div class="exams">
+                <p class="exam">HTML Exam technical knowledge check<button><a
+                            href="/examlogin.html">Register</a></button></p>
+                <p class="exam">CSS Exam technical knowledge check <button><a
+                            href="/examlogin.html">Register</a></button></p>
+                <p class="exam">java Exam technical knowledge check<button><a
+                            href="/examlogin.html">Register</a></button></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <div class="examh">
+        <h3 class="exam-heading"><span class="hiphen">___</span> OUR SERVICES <span class="hiphen">___</span></h3>
+    </div>
+    <section class="services" id="services">
+
+        <div class="service-box">
+            <h3>matain details</h3>
+            <img src="images/file.jpg" alt="box">
+            <p>This is the service to maintain the results in the database until your account is destroyed by you,and
+                you full will be displayed in result page when result page is update</p>
+        </div>
+        <div class="service-box">
+            <h3>knowledge checks</h3>
+            <img src="images/plank.jpg" alt="box">
+            <p>You can write any exam for your interest and knowledge for that you need to register and give a request
+                to conduct exam on it, and you can watch your tecnical analysis at any where and any time</p>
+        </div>
+        <div class="service-box">
+            <h3>notification bar</h3>
+            <img src="images/mail.jpg" alt="box">
+            <p>you may get these type of the exams by the notification on your phone and this is site you have your
+                technical analysis by the exam knowledge checks</p>
+        </div>
+    </section>
+
+    <!-- FEEDBACK DETAILS -->
+    <div class="examh">
+        <h3 class="exam-heading"><span class="hiphen">___</span> GIVE FEEDBACK <span class="hiphen">___</span></h3>
+    </div>
+    <section id="feedback">
+        <div class="feedback">
+            <h2 class="starh">Star Rating</h2>
+            <div class="stars">
+                <input type="radio" name="rate" id="rate5">
+                <label class="fa fa-star" for="rate5"></label>
+                <input type="radio" name="rate" id="rate4">
+                <label class="fa fa-star" for="rate4"></label>
+                <input type="radio" name="rate" id="rate3">
+                <label class="fa fa-star" for="rate3"></label>
+                <input type="radio" name="rate" id="rate2">
+                <label class="fa fa-star" for="rate2"></label>
+                <input type="radio" name="rate" id="rate1">
+                <label class="fa fa-star" for="rate1"></label>
+                <span class="feedbackresult"></span>
+            </div>
+            <form action="mailto:mandalagowtham2003gmail.com" >
+                <div class="textarea">
+                    <input name="feedbackdesc" placeholder="describe your feedback" required id="feedbacktxt" />
+                </div>
+                <div class="feedback-btn">
+                    <input type="submit" name="feedbackdesc" value="send feedback" onclick='feedbackbtn()'>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <!-- CONTACT DETAILS -->
+    <section id="contact">
+        <div class="examh">
+            <h3 class="exam-heading"><span class="hiphen">___</span> CONTACT US <span class="hiphen">___</span></h3>
+        </div>
+        <div class="contact">
+            <label for="contact">CONTCAT US</label>
+            <form action="mailto:mandalagowtham2003@gamil.com">
+                <input type="email" required placeholder="enter your email">
+                <input type="text" required placeholder="enter your name">
+                <input type="submit" value="contact" name="contactus" class="contactbtn">
+            </form>
+        </div>
+
+    </section>
+    
+    <div class="biglogo">
+        <img src="images/Screenshot (97)-01.jpeg" alt="logo">
+    </div>
+
+
+    <!-- FOOTER DEATAILS SECTION -->
+    <section class="footer">
+        <footer>@copyrights are belongs to <span>gowtham and pandu</span></footer>
+    </section>
+    <script>
+        let bar = document.querySelector('.fa.fa-bars');
+        let ul = document.querySelector('#ul');
+        bar.addEventListener('click', function (e) {
+            ul.style.display = "flex";
+            ul.style.left = '-100px';
+        });
+        let feedtxt = document.querySelector('#feedbacktxt').value;
+        function feedbackbtn() {
+            alert("your feedback is sent successfully ..✅");
+        }
+
+        let close = document.querySelector('.close');
+        close.addEventListener('click', function (e) {
+            ul.style.display = "none";
+            ul.style.left = '-100px';
+        });
+        // $('.menu-btn').click(function () {
+        //     $('.navbar .menu').toggleClass("active");
+        //     $('.menu-btn i').toggleClass("active");
+        // });
+
+
+
+    </script>
+</body>
+
+</html>

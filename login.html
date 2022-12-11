@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: rgb(252, 252, 252);
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .login-container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-page {
+      /* border: 2px solid black; */
+      padding: 20px;
+      width: 450px;
+      text-align: center;
+      background-color: rgb(252, 252, 252);
+      border-radius: 16px;
+    }
+
+    .heading {
+      padding-bottom: 5px;
+      border-radius: 15px;
+    }
+
+    /* .head{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: rgb(19, 17, 18);
+} */
+    .input-feild {
+      width: 100%;
+      padding: 16px;
+      box-sizing: border-box;
+
+      font-size: 16px;
+      border: 1px solid gray;
+      border-radius: 15px;
+    }
+
+    .usrname {
+      margin-bottom: 20px;
+    }
+
+    .conditions ul .cont1 {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-between;
+    }
+
+    .input-feild:focus {
+      outline: none;
+      border: 1px solid rgb(237, 108, 188);
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 16px;
+      border: 1px solid black;
+      border-radius: 15px;
+      background-color: rgb(39, 39, 186);
+      cursor: pointer;
+      font-size: 16px;
+
+    }
+
+    .login-link {
+      text-decoration: none;
+      color: aliceblue;
+    }
+
+    .icon-container {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .icon {
+      text-decoration: none;
+    }
+
+    .link {
+      text-decoration: none;
+      color: blue;
+    }
+
+    .link:hover {
+      color: rgb(47, 47, 182);
+    }
+
+    .login-btn:hover {
+      background-color: rgb(118, 13, 94);
+      padding: 15.5px;
+    }
+
+    .input-feild:hover {
+      background-color: rgb(245, 242, 242);
+    }
+
+    .icon:hover {
+      background-color: rgb(245, 242, 242);
+    }
+
+    .loadcontainer {
+      display: flex;
+    }
+
+    .biglogo img {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      border: 10px solid white;
+      left: -5px;
+      box-shadow: grey 1px 3px 31px 5px;
+      border-radius: 50%;
+      animation: biglogo infinite;
+      animation-duration: 7s;
+    }
+
+    .login-container {
+      height: 47vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin-top: -288px;
+      margin-left: -25px;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .login-page {
+      /* border: 2px solid black; */
+      padding: 20px;
+      width: 450px;
+      text-align: center;
+      background-color: rgb(252, 252, 252);
+      border-radius: 16px;
+      margin-top: 743px;
+    }
+
+    nav {
+      height: 80px;
+      width: 2058px;
+      background-color: rgb(46 60 90);
+    }
+
+    label.logo {
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      font-family: cursive;
+      padding: 0 100px;
+      line-height: 80px;
+    }
+
+    nav ul {
+      float: right;
+      margin-right: 40px;
+      line-height: 80px;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 0 8px;
+
+    }
+
+    nav a {
+      color: white;
+      text-transform: lowercase;
+      border: 1px solid transparent;
+      font-size: 18px;
+      padding: 7px 10px;
+      border-radius: 6px;
+    }
+
+    a.active,
+    a:hover {
+      border: 1px solid white;
+      transition: .5s;
+
+    }
+
+    nav ul .icon {
+      background-color: white;
+      height: 30px;
+      width: 29px;
+      margin: 25px 40px 0px 0px;
+      float: right;
+      cursor: pointer;
+      display: none;
+    }
+
+    @media (max-width:900px) {
+      .biglogo img {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        border: 10px solid white;
+        left: 30px;
+        top: 29px;
+        box-shadow: grey 1px 3px 31px 5px;
+        border-radius: 50%;
+        animation: biglogo infinite;
+        animation-duration: 7s;
+      }
+
+      nav {
+        height: 121px;
+        width: 560px;
+        background-color: rgb(46 60 90);
+      }
+
+      nav ul {
+        float: right;
+        margin-right: 15px;
+        line-height: 1px;
+      }
+
+
+
+
+      .login-container {
+        height: 47vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-top: -338px;
+        margin-left: 58px;
+      }
+
+      .biglogo {
+        height: 308px;
+        width: 229px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar">
+    <nav>
+      <label class="logo">Studatabase.com</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Abount</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="biglogo">
+    <img src="images/Screenshot (97)-01.jpeg" alt="logo">
+  </div>
+  <div class="login-container">
+    <form action="" class="login-page">
+      <h1 class="heading head">Welcome Back</h1>
+      <h1 class="heading"></h1>
+      <input class="input-feild usrname" type="text" id="name" placeholder="Enter the username">
+      <input class="input-feild password" type="password" id="password" placeholder="Enter the Password">
+      <div class="conditions">
+        <ul>
+          <div class="cont1">
+            <li>One lowercase character</li>
+            <li>One uppercase character</li>
+            <li>One number</li>
+            <li>One special character</li>
+            <li>8 characters minimum</li>
+          </div>
+        </ul>
+      </div>
+      <button class="login-btn"><a href="index.html" class="login-link">Log in</a></button>
+
+      <p>--or sign in with---</p>
+      <div class="icon-container">
+        <a href="" class="icon"><i class="bi bi-google">Google</i></a>
+        <a href="" class="icon"><i class="bi bi-apple">apple</i></a>
+        <a href="" class="icon"><i class="bi bi-facebook">facebook</i></a>
+      </div>
+      <p class="small">Forget your password? <a href="forget.html" class="link">reset your password</a></p>
+      <p class="small">Do not have account?<a href="homepage.html" class="link">sign up</a></p>
+    </form>
+  </div>
+  <div class="loadcontainer">
+    <div id="line" class="line1" style="animation-delay:100ms"></div>
+    <div id="line" class="line2" style="animation-delay:200ms"></div>
+    <div id="line" class="line3" style="animation-delay:300ms"></div>
+    <div id="line" class="line4" style="animation-delay:400ms"></div>
+    <div id="line" class="line4" style="animation-delay:500ms"></div>
+    <div id="line" class="line4" style="animation-delay:600ms"></div>
+  </div>
+
+  <script>
+    $(window).on("load", function () {
+      $(".loadcontaner").fadeOut("slow");
+    });
+  </script>
+</body>
+
+</html>

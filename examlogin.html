@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #fff;
+        }
+
+        nav {
+            height: 80px;
+            width: 100%;
+            background-color: rgb(46 60 90);
+        }
+
+        label.logo {
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            font-family: cursive;
+            padding: 0 100px;
+            line-height: 80px;
+        }
+
+        .login-container {
+            height: 47vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-top: -321px;
+            margin-left: 37px;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 40px;
+            line-height: 80px;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 8px;
+
+        }
+
+        nav a {
+            color: white;
+            text-transform: lowercase;
+            border: 1px solid transparent;
+            font-size: 18px;
+            padding: 7px 10px;
+            border-radius: 6px;
+        }
+
+        a.active,
+        a:hover {
+            border: 1px solid white;
+            transition: .5s;
+
+        }
+
+        nav ul .icon {
+            background-color: white;
+            height: 30px;
+            width: 29px;
+            margin: 25px 40px 0px 0px;
+            float: right;
+            cursor: pointer;
+            display: none;
+        }
+
+        .login {
+            margin-top: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-box {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 4px 6px 14px 1px grey;
+            padding: 50px;
+            padding-bottom: 100px;
+        }
+
+        .loginlogo {
+            width: 90px;
+            height: 90px;
+            border: 3px solid #fff;
+            box-shadow: 4px 6px 14px 1px grey;
+            border-radius: 50%;
+            margin: 3px;
+        }
+
+        .loginbtn {
+            height: 40px;
+            width: 200px;
+            font-size: 18px;
+            border: none;
+            border-radius: 7px;
+            background-color: rgb(11, 56, 95);
+        }
+
+        .loginbtn a {
+            border: none;
+            color: #fff;
+        }
+
+        #lelement {
+            margin: 5px;
+        }
+
+        h3 {
+            color: grey;
+            font-size: 17px;
+        }
+
+        .search-bar {
+            height: 32px;
+            width: 230px;
+            border: 1px solid rgb(190, 187, 187);
+            border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .search {
+            flex-grow: 1;
+            height: 30px;
+            margin-left: 7px;
+            margin-right: 15px;
+            border: none;
+            font-size: 10px;
+        }
+
+        .search-bar:hover {
+            box-shadow: 2px 2px 9px rgb(210, 208, 208);
+            transition: 0.5s;
+        }
+
+        .search:focus {
+            outline: none;
+        }
+
+        #input-icon {
+            color: grey;
+            margin-left: 7px;
+        }
+
+        #mic-icon {
+            margin-right: 6px;
+        }
+
+        .show {
+            margin-top: 7px;
+            margin-left: -125px;
+            display: flex;
+            font-size: 12px;
+            align-items: flex-start;
+            color: grey;
+        }
+
+        @media (max-width:900px) {
+            nav {
+                height: 147px;
+                width: 100%;
+                background-color: rgb(46 60 90);
+            }
+
+            .login-box {
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: none;
+                border-radius: 10px;
+                box-shadow: 4px 6px 14px 1px grey;
+                padding: 50px;
+                padding-bottom: 100px;
+                margin-left: 448px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <nav>
+            <label class="logo">Studatabase.com</label>
+            <ul>
+                <li class="icon">
+                    <div class="one"></div>
+                    <div class="one"></div>
+                    <div class="one"></div>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li><a href="index.html">Abount</a></li>
+                <li><a href="index.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <section class="login">
+        <div class="login-box">
+            <img src="images/Screenshot (97)-01.jpeg" alt="logo" class="loginlogo" id="lelement">
+            <h2 id="lelement">Studatabase.com</h2>
+            <h3 id="lelement">exam login</h3>
+            <div class="search-bar">
+                <span class="fa fa-user" id="input-icon"></span>
+                <input type="text" class="search" placeholder="Exam registerID" required id="user">
+            </div>
+            <div class="search-bar">
+                <span class="fa fa-lock" id="input-icon"></span>
+                <input type="password" class="search" placeholder="Exam password" id="pwd" required>
+            </div>
+            <div class="show">
+                <input type="checkbox" onclick="myFunction()" required>Show Password
+            </div>
+            <button class="loginbtn" id="lelement"><a class="loginbtn" href="main.html">Login</a></button>
+        </div>
+    </section>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("pwd");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+
+</html>
