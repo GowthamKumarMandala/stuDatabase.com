@@ -237,7 +237,7 @@ footer span {
     height: 500px;
     margin: 60px 20px 0 0;
     position: absolute;
-    left:-320px;
+    left:-220px;
     display: flex;
     animation:exam infinite;
     animation-duration: 3s;
