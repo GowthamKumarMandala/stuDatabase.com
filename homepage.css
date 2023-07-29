@@ -244,7 +244,7 @@ footer span {
 }
 @keyframes exam {
     0%{
-        left:-320px;
+        left:-220px;
     }
     30%{
         left:-430px;
@@ -253,7 +253,7 @@ footer span {
         left:-400px;
     }
     100%{
-        left:-320px;
+        left:-220px;
     }
 }
 .exam-details{
