@@ -503,11 +503,11 @@ form .feedback-btn input{
         left:400px;
     }*/
     40%{
-        transform: rotate(180deg);
+        transform: rotate(0deg);
         left:100px;
     }
     60%{
-        transform: rotate(0deg);
+        transform: rotate(-180deg);
         left:-400px;
     }
     
