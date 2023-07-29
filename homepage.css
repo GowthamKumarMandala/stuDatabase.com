@@ -265,6 +265,7 @@ footer span {
     position: relative;
     display: flex;
     margin-left:135px;
+    z-index:99;
 }
 
 .exam button {
