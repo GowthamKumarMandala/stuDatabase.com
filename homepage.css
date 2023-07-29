@@ -437,7 +437,7 @@ form .feedback-btn input{
     display: flex;
     flex-direction: column;
     height: 400px;
-    width: 1010px;
+    width: 1007px;
     background: linear-gradient(140deg,rgb(243, 237, 241) 30%,rgb(249, 232, 244));
     justify-content: center;
     align-items: center;
