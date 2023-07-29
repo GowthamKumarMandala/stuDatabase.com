@@ -235,9 +235,9 @@ footer span {
 .bulbimg {
     width: 500px;
     height: 500px;
-    margin: 60px 0 0 0;
+    margin: 60px 20px 0 0;
     position: absolute;
-    left:-520px;
+    left:-320px;
     display: flex;
     animation:exam infinite;
     animation-duration: 3s;
