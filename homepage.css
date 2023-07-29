@@ -506,10 +506,7 @@ form .feedback-btn input{
         transform: rotate(0deg);
         left:100px;
     }
-    60%{
-        transform: rotate(-180deg);
-        left:-400px;
-    }
+    
     70%{
         transform: rotate(0deg);
         left:100px;
