@@ -479,6 +479,7 @@ form .feedback-btn input{
     font-size: 23px;
     margin-top: 50px;
     margin-bottom: 90px;
+    margin-right:50px;
     border-radius: 10px;
     transition: all .4s ease;
 }
