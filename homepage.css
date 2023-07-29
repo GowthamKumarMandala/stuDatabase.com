@@ -498,10 +498,10 @@ form .feedback-btn input{
     0%{
         transform: rotate(0deg);
     }
-    20%{
+    /*20%{
         transform: rotate(180deg);
         left:400px;
-    }
+    }*/
     40%{
         transform: rotate(0deg);
         left:100px;
@@ -510,11 +510,11 @@ form .feedback-btn input{
         transform: rotate(0deg);
         left:-400px;
     }
-    /*
+    
     70%{
         transform: rotate(0deg);
         left:100px;
-    }*/
+    }
     100%{
         transform: rotate(0deg);
     }
